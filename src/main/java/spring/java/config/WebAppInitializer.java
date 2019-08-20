@@ -20,7 +20,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		
 		container.addListener(new ContextLoaderListener(rootContext));
 		
-		DispatcherServlet dispatcherServlet  = new DispatcherServlet();
+		DispatcherServlet dispatcherServlet  = new DispatcherServlet(rootContext);
 		
 		ServletRegistration.Dynamic registration = container.addServlet("dispatcherServlet",dispatcherServlet);
 		registration.setLoadOnStartup(1);
