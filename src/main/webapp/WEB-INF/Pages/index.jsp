@@ -8,5 +8,6 @@
 </head>
 <body>
 <h1>Successfully running Main Page</h1>
+<a href="${pageContext.request.contextPath}/displayUsers">show user on console</a>
 </body>
 </html>
